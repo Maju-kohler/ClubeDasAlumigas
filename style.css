@@ -1,0 +1,40 @@
+:root{
+    --background-color: #FBF5F3;
+    --title-color: #7B0828;
+    --subtitle-color: #FF6B6B;
+    --text-color: #0F0E0E;
+    --details: #7F7CAF;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color: var(--text-color);
+    
+    background-color: var(--background-color);
+
+}
+
+.principal{
+    display: flex;
+}
+
+
+/* textos */
+#titulo{
+    color: var(--title-color)
+}
+
+#subtitulo{
+    color: var(--subtitle-color)
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ultra', serif;
+    font-weight: 400;
+}
+
+/* imagens */
+#logo{
+    width: 30rem;
+}

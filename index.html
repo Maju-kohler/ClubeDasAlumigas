@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ultra|Work+Sans:400,500" rel="stylesheet">
+    <title>Clube das Alumigas</title>
+</head>
+<body style= "background-color:white";>
+    <!-- mensagem de aviso -->
+    <marquee> ATENÇÃO: O Ateliêr irá passar por reformas em Janeiro de 2023! Previsão de retorno em Março de 2023. Obrigada pela compreensão!</marquee>
+    
+    <!-- título, slogan e logo -->
+    <div class="principal">
+        <h1 id="titulo">         
+            Clube das Alumigas
+        </h1>
+
+        <p id="subtitulo">
+            O Ateliêr em que você é Aluna e Amiga!
+        </p>
+
+        <img src=".\img\Logo.jpg" id="logo">
+    </div>
+    <!-- links de navegação -->
+    <nav>
+        <a href="#historia">Historia</a>
+        <a href="#professoraRosi">Professora</a>
+        <a href="#participarCursos">Cursos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <hr>
+    <!-- conteudo do site -->
+    <div style="background-color: rgb(226, 175, 222)" id="historia">
+        <h1>História</h1> 
+        <p> 
+            O Clube das Alumigas nasceu em 2009, com aulas de scrapbook voltado para o público feminino. Hoje, treze anos depois, temos alunas pelo mundo todo, espalhando amor e criatividade por onde quer que vão! <br>
+            Somos um Ateliêr movido pelo <strong>amor ao Artesanato</strong>, <I>amor pela Vida</I>, <u>pela trabalhadora Artesã</u>, <blink>e pelo carinho de todas nossas alunas!</blink>. Venha participar você também!
+
+            <p style="text-align: center;"><img src=".\img\Arte2.PNG"> <img src=".\img\Arte.PNG"> <img src=".\img\Arte3.PNG"></p>
+        </p>
+    </div>
+    
+    <hr>
+    <!-- conteudo do site -->
+    <div id="professoraRosi">
+        <h1>Sobre a Professora Rosi</h1>
+        <p> História da professora Rosi</p>
+        <p style="text-align: center;"><img src=".\img\Perfil.PNG"> </p>
+    </div>
+    
+    <hr>
+    <!-- conteudo do site -->
+    <div style="background-color: rgb(226, 175, 222)" id="participarCursos">
+        <h1> Venha participar dos nossos cursos! </h1>
+        <p> Temos aulas de: </p>
+        <ol>
+            <li>
+                Scrapbook
+            </li>
+            <li>
+                Pintura em Tela
+            </li>
+            <li>
+                Pintura de Cerâmica
+            </li>
+            <li>
+                Pintura em Tecido
+            </li>
+            <li>
+                Pintura em MDF
+            </li>
+        </ol>
+        <h2> Turmas Disponíveis</h2>
+        <!-- tabela dos cursos -->
+        <table border="1">
+            <tr align="center">
+                <td>...</td>
+                <td>Segunda</td>
+                <td>Terça</td>
+                <td>Quarta</td>
+                <td>Quinta</td>
+                <td>Sexta</td>
+
+            </tr>
+            <tr align="center">
+                <td>Manhã</td>
+                <td>Scrapbook</td>
+                <td>Pintura Cerâmica</td>
+                <td>Pintura Tela</td>
+                <td>Pintura Tecido</td>
+                <td>Pintura MDF</td>
+            </tr>
+            <tr align="center">
+                <td>Tarde</td>
+                <td>Scrapbook</td>
+                <td>Pintura Cerâmica</td>
+                <td>Pintura Tela</td>
+                <td>Pintura Tecido</td>
+                <td>Pintura MDF</td>
+            </tr>
+            <tr align="center">
+                <td>Noite</td>
+                <td>Scrapbook</td>
+                <td>Scrapbook</td>
+                <td>Scrapbook</td>
+
+
+            </tr>
+        </table>
+        <p> OBS: Para aulas particulares, por favor contate a gente pessoalmente ou via inbox!</p>
+    </div>
+    <hr>
+    
+    <!-- conteudo do site -->
+    <div style="background-color: rgb(226, 175, 222)" id="contato">
+        <h1>Contato</h1>
+        <p>Entre em contato conosco! Conheça nossas redes sociais: </p>
+        <ul>
+            <li> <a href="https://www.instagram.com/clubedasalumigas/" target="_blank">Instagram</a></li>
+            <li> <a href="https://www.facebook.com/clubedasalumigas?paipv=0&eav=AfZ3M1J8NkWsH5Ecsxz_uPUJXbYaWAiBqK9gZW8Eu5zFPtfNBj0fmzFLwyvGGsOB5HE" target="_blank">Facebook</a>
+            </li> 
+        </ul>
+
+        <aside id="eventos">
+            <h1>Eventos</h1>
+            <p>Venha participar de nossos eventos abertos ao público!</p>
+            <br>
+            <p>Evento mais recente</p>
+            <img src=".\img\Arte4.PNG">
+            <p>Toda a programação você pode encontrar no nosso Instagram!</p>
+        </aside>
+
+        <p> Ou deixe uma mensagem na nossa caixa de e-mail!</p>
+        <form action=”mailto:contatoProvisorio@email.com” method="post" name="emailForm">
+            <label for="name">Nome: </label>
+            <input type="text" id="name" name="nomeCliente" required>
+            
+            <br>
+
+            <label for="email">e-mail: </label>
+            <input type="email" id="email" name="email" required>
+
+            <br>
+
+            <div>
+                <label for="mensagem" class="fcf-label">Sua mensagem</label>
+                <div>
+                    <textarea id="mensagem" name="mensagem" rows="6" maxlength="3000" required></textarea>
+                </div>
+            </div>
+
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" id="checkbox_lb">Eu gostaria de receber notícias via e-mail</label>
+            <br><br>
+            <button type="submit" id="button">Mandar mensagem</button>
+            
+        </form>
+    </div>
+
+    <!-- mensagem para a professora -->
+    <p> Oi professora! O meu tema desse trabalho é sobre o Atelier da minha mãe, quero aproveitar essa oportunidade e fazer um site para promover o trabalho dela :)</p>
+</body>
+</html>
