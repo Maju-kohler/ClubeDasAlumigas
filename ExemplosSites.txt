@@ -1,0 +1,24 @@
+Websites com exemplo de html 5:
+
+Canvas:
+
+*Site com exemplo de outros sites que utilizam o canvas
+https://code.tutsplus.com/articles/21-ridiculously-impressive-html5-canvas-experiments--net-14210
+
+https://lr.doesbook.kr/en/
+
+https://raw.com.tw/en
+
+https://hsmkrt1996.com
+
+
+SVG:
+
+*Exemplo de sites que utilizam animações com SVG:
+https://waaark.com
+
+https://www.supremo.co.uk/typeterms/
+
+https://cuberto.com
+
+https://horizon.io

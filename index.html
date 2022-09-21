@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=".\style.css">
-    <link href="https://fonts.googleapis.com/css?family=Ultra|Work+Sans:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:300,600|Playfair+Display" rel="stylesheet">
     <title>Clube das Alumigas</title>
 </head>
 <body style= "background-color:white";>
@@ -15,114 +15,134 @@
         </audio>
     
     <!-- mensagem de aviso -->
-    <marquee> ATENÇÃO: O Ateliêr irá passar por reformas em Janeiro de 2023! Previsão de retorno em Março de 2023. Obrigada pela compreensão!</marquee>
+    <marquee> 
+        <h5>ATENÇÃO: O Ateliêr irá passar por reformas em Janeiro de 2023! Previsão de retorno em Março de 2023. Obrigada pela compreensão!</h5>
+    </marquee>
     
     <!-- título, slogan e logo -->
     <div class="principal">
+        <img src=".\img\Logo.jpg" id="logo">
+        
+        <div class="texto_titulo">
         <h1 id="titulo">         
             Clube das Alumigas
         </h1>
-
+        
         <p id="subtitulo">
             O Ateliêr em que você é Aluna e Amiga!
         </p>
-
-        <img src=".\img\Logo.jpg" id="logo">
+        </div>
     </div>
 
-    <!-- Exercicio 2 - Canvas -->
-    <canvas id="myCanvas" width="400" height="400"></canvas>
+    <!-- Exercicio 2 - Canvas
+    <canvas id="myCanvas" width="400" height="400"></canvas> -->
 
     <!-- links de navegação -->
     <nav>
         <a href="#historia">Historia</a>
+        <img src="./img/dot-svgrepo-com.svg">
         <a href="#professoraRosi">Professora</a>
+        <img src="./img/dot-svgrepo-com.svg">
         <a href="#participarCursos">Cursos</a>
+        <img src="./img/dot-svgrepo-com.svg">
         <a href="#contato">Contato</a>
     </nav>
-    <hr>
+    
     <!-- conteudo do site -->
-    <div style="background-color: rgb(226, 175, 222)" id="historia">
-        <h1>História</h1> 
-        <p> 
-            O Clube das Alumigas nasceu em 2009, com aulas de scrapbook voltado para o público feminino. Hoje, treze anos depois, temos alunas pelo mundo todo, espalhando amor e criatividade por onde quer que vão! <br>
-            Somos um Ateliêr movido pelo <strong>amor ao Artesanato</strong>, <I>amor pela Vida</I>, <u>pela trabalhadora Artesã</u>, <blink>e pelo carinho de todas nossas alunas!</blink>. Venha participar você também!
-
-            <p style="text-align: center;"><img src=".\img\Arte2.PNG"> <img src=".\img\Arte.PNG"> <img src=".\img\Arte3.PNG"></p>
-        </p>
+    <div id="historia">
+        <div class="texto_titulo">
+            <h2 class="titulo_materia">História</h2> 
+            <p> 
+                O Clube das Alumigas nasceu em 2009, com aulas de scrapbook voltado para o público feminino. Hoje, treze anos depois, temos alunas pelo mundo todo, espalhando amor e criatividade por onde quer que vão! <br>
+                Somos um Ateliêr movido pelo <strong>amor ao Artesanato</strong>, <I>amor pela Vida</I>, <u>pela trabalhadora Artesã</u>, <blink>e pelo carinho de todas nossas alunas!</blink>. Venha participar você também!
+                <!-- <img src=".\img\Arte.PNG"> <img src=".\img\Arte3.PNG"> -->
+            </p>
+        </div>
         <aside>
-            <h3>Para mais informações, visite o nosso instagram!</h3>
-            <a href="https://www.instagram.com/clubedasalumigas/" target="_blank">Instagram</a>
+            <h3>Para mais informações, visite o nosso <a href="https://www.instagram.com/clubedasalumigas/" target="_blank">Instagram!</a></h3>
+            
         </aside>
     </div>
     
-    <hr>
+    <div class="imagem_container">
+        <!-- <img src=".\img\Arte.PNG"> -->
+    </div>
+
     <!-- conteudo do site -->
     <div id="professoraRosi">
-        <h1>Sobre a Professora Rosi</h1>
-        <p> História da professora Rosi</p>
+        <div class="texto_titulo">
+            <h2 class="titulo_materia">Sobre a Professora Rosi</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
         <p style="text-align: center;"><img src=".\img\Perfil.PNG"> </p>
     </div>
     
-    <hr>
     <!-- conteudo do site -->
-    <div style="background-color: rgb(226, 175, 222)" id="participarCursos">
-        <h1> Venha participar dos nossos cursos! </h1>
-        <p> Temos aulas de: </p>
-        <ol>
-            <li>
-                Scrapbook
-            </li>
-            <li>
-                Pintura em Tela
-            </li>
-            <li>
-                Pintura de Cerâmica
-            </li>
-            <li>
-                Pintura em Tecido
-            </li>
-            <li>
-                Pintura em MDF
-            </li>
-        </ol>
-        <h2> Turmas Disponíveis</h2>
-        <!-- tabela dos cursos -->
-        <table border="1">
-            <tr align="center">
-                <td>...</td>
-                <td>Segunda</td>
-                <td>Terça</td>
-                <td>Quarta</td>
-                <td>Quinta</td>
-                <td>Sexta</td>
+    <div id="participarCursos">
+        <h2 class="titulo_materia"> Venha participar dos nossos cursos! </h2>
+        <span>
 
-            </tr>
-            <tr align="center">
-                <td>Manhã</td>
-                <td>Scrapbook</td>
-                <td>Pintura Cerâmica</td>
-                <td>Pintura Tela</td>
-                <td>Pintura Tecido</td>
-                <td>Pintura MDF</td>
-            </tr>
-            <tr align="center">
-                <td>Tarde</td>
-                <td>Scrapbook</td>
-                <td>Pintura Cerâmica</td>
-                <td>Pintura Tela</td>
-                <td>Pintura Tecido</td>
-                <td>Pintura MDF</td>
-            </tr>
-            <tr align="center">
-                <td>Noite</td>
-                <td>Scrapbook</td>
-                <td>Scrapbook</td>
-                <td>Scrapbook</td>
+            <div class="texto_titulo">
+                
+                <p> Temos aulas de: </p>
+                <ol>
+                    <li>
+                        Scrapbook
+                    </li>
+                    <li>
+                        Pintura em Tela
+                    </li>
+                    <li>
+                        Pintura de Cerâmica
+                    </li>
+                    <li>
+                        Pintura em Tecido
+                    </li>
+                    <li>
+                        Pintura em MDF
+                    </li>
+                </ol>
+            </div>  
+            <div class="texto_titulo">
+                <h2> Turmas Disponíveis</h2>
+                <!-- tabela dos cursos -->
+                <table border="1">
+                    <tr align="center">
+                        <td>...</td>
+                        <td>Segunda</td>
+                        <td>Terça</td>
+                        <td>Quarta</td>
+                        <td>Quinta</td>
+                        <td>Sexta</td>
+
+                    </tr>
+                    <tr align="center">
+                        <td>Manhã</td>
+                        <td>Scrapbook</td>
+                        <td>Pintura Cerâmica</td>
+                        <td>Pintura Tela</td>
+                        <td>Pintura Tecido</td>
+                        <td>Pintura MDF</td>
+                    </tr>
+                    <tr align="center">
+                        <td>Tarde</td>
+                        <td>Scrapbook</td>
+                        <td>Pintura Cerâmica</td>
+                        <td>Pintura Tela</td>
+                        <td>Pintura Tecido</td>
+                        <td>Pintura MDF</td>
+                    </tr>
+                    <tr align="center">
+                        <td>Noite</td>
+                        <td>Scrapbook</td>
+                        <td>Scrapbook</td>
+                        <td>Scrapbook</td>
 
 
-            </tr>
-        </table>
+                    </tr>
+                </table>
+            </div>
+        </span>
         <p> OBS: Para aulas particulares, por favor contate a gente pessoalmente ou via inbox!</p>
 
         <video width="640" height="auto" controls>
@@ -134,7 +154,7 @@
     
     <!-- conteudo do site -->
     <div style="background-color: rgb(226, 175, 222)" id="contato">
-        <h1>Contato</h1>
+        <h2>Contato</h2>
         <p>Entre em contato conosco! Conheça nossas redes sociais: </p>
         <ul>
             <li> <a href="https://www.instagram.com/clubedasalumigas/" target="_blank">Instagram</a></li>
@@ -143,7 +163,7 @@
         </ul>
 
         <aside id="eventos">
-            <h1>Eventos</h1>
+            <h2>Eventos</h2>
             <p>Venha participar de nossos eventos abertos ao público!</p>
             <br>
             <p>Evento mais recente</p>

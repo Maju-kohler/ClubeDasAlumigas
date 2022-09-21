@@ -3,38 +3,145 @@
     --title-color: #7B0828;
     --subtitle-color: #FF6B6B;
     --text-color: #0F0E0E;
-    --details: #7F7CAF;
+    --details: #F0E4ED;
+
+    --font-title: 'Gothic A1', sans-serif;
+    --font-text: 'Playfair Display', serif;
 }
 
+/* estrutura do website */
 body {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
+    font-family: var(--font-title);
+    font-weight: 300;
     color: var(--text-color);
     
     background-color: var(--background-color);
 
 }
 
+a{
+    color: var(--text-color);
+}
+
+nav{
+    text-align: center;
+    margin-top: 3rem;
+
+    height: auto;
+
+}
+
+nav a{
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-color);
+
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+nav img{
+    width: 5px;
+    height: auto;
+
+    margin-bottom: 3px;
+}
+
 .principal{
     display: flex;
 }
 
+#historia{
+    background-color: var(--details);
+    border-radius: 25px 25px 0 0;
 
-/* textos */
-#titulo{
-    color: var(--title-color)
+    display: flex;
 }
 
-#subtitulo{
-    color: var(--subtitle-color)
+#historia p{
+    width: 40rem;
+}
+
+#historia aside{
+    align-self:flex-end;
+}
+
+#professoraRosi{
+    display: flex;
+}
+
+#professoraRosi p{
+    margin-right: 3.5rem;
+    text-align: justify;
+}
+
+#participarCursos{
+    background-color: var(--details);
+}
+
+#participarCursos span{
+    display: flex;
+}
+
+/* textos */
+marquee{
+    font-family: var(--font-text);
+    color: var(--text-color);
+    background-color: var(--details);
+    font-weight: bold;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Ultra', serif;
+    font-family: var(--font-text);
     font-weight: 400;
+    text-transform: uppercase;
 }
+
+p{
+    font-size: 1.3rem;
+}
+
+.texto_titulo{
+    width: 70%;
+
+    padding: 10px;
+}
+
+#titulo{
+    color: var(--title-color);
+    font-size: 6rem;
+}
+
+#subtitulo{
+    color: var(--subtitle-color);
+    font-size: 2.5rem;
+
+    margin-top: -60px;
+}
+
+.titulo_materia{
+    font-size: 3rem;
+}
+
 
 /* imagens */
 #logo{
     width: 30rem;
+}
+
+.imagem_container{
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('img/ARTE5.jpeg');
+    background-attachment: fixed;
+
+    margin: auto;
+
+}
+
+#professoraRosi img{
+    border-radius: 25px 0 0 25px;
 }
