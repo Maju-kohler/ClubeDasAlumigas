@@ -84,7 +84,7 @@
 
             <div class="texto_titulo">
                 
-                <p> Temos aulas de: </p>
+                <h2> Temos aulas de: </h2>
                 <ol>
                     <li>
                         Scrapbook
@@ -143,59 +143,59 @@
                 </table>
             </div>
         </span>
-        <p> OBS: Para aulas particulares, por favor contate a gente pessoalmente ou via inbox!</p>
+        <h5> OBS: Para aulas particulares, por favor contate-nos pessoalmente ou via inbox!</h5>
 
-        <video width="640" height="auto" controls>
+        <video width="500" height="auto" controls>
             <source src="./midia/Dica Rápida - Stencil.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
     </div>
-    <hr>
     
     <!-- conteudo do site -->
-    <div style="background-color: rgb(226, 175, 222)" id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco! Conheça nossas redes sociais: </p>
-        <ul>
-            <li> <a href="https://www.instagram.com/clubedasalumigas/" target="_blank">Instagram</a></li>
-            <li> <a href="https://www.facebook.com/clubedasalumigas?paipv=0&eav=AfZ3M1J8NkWsH5Ecsxz_uPUJXbYaWAiBqK9gZW8Eu5zFPtfNBj0fmzFLwyvGGsOB5HE" target="_blank">Facebook</a>
-            </li> 
-        </ul>
+    <div id="contato">
+        <div class="texto_titulo">
+            <h2 class="titulo_materia">Contato</h2>
+            <p>Entre em contato conosco! Conheça nossas redes sociais: </p>
+            <ul>
+                <li> <a href="https://www.instagram.com/clubedasalumigas/" target="_blank">Instagram</a></li>
+                <li> <a href="https://www.facebook.com/clubedasalumigas?paipv=0&eav=AfZ3M1J8NkWsH5Ecsxz_uPUJXbYaWAiBqK9gZW8Eu5zFPtfNBj0fmzFLwyvGGsOB5HE" target="_blank">Facebook</a>
+                </li> 
+            </ul>
 
+            <p> Ou deixe uma mensagem na nossa caixa de e-mail!</p>
+            <form action=”mailto:contatoProvisorio@email.com” method="post" name="emailForm">
+                <label for="name">Nome: </label>
+                <input type="text" id="name" name="nomeCliente" required>
+                
+                <br>
+
+                <label for="email">e-mail: </label>
+                <input type="email" id="email" name="email" required>
+
+                <br>
+
+                <div>
+                    <label for="mensagem" class="fcf-label">Sua mensagem</label>
+                    <div>
+                        <textarea id="mensagem" name="mensagem" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                </div>
+
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" id="checkbox_lb">Eu gostaria de receber notícias via e-mail</label>
+                <br><br>
+                <button type="submit" id="button">Mandar mensagem</button>
+                
+            </form>
+        </div>
         <aside id="eventos">
-            <h2>Eventos</h2>
+            <h2 class="titulo_materia">Eventos</h2>
             <p>Venha participar de nossos eventos abertos ao público!</p>
             <br>
-            <p>Evento mais recente</p>
+            <p>Evento mais recente:</p>
             <img src=".\img\Arte4.PNG">
             <p>Toda a programação você pode encontrar no nosso Instagram!</p>
         </aside>
-
-        <p> Ou deixe uma mensagem na nossa caixa de e-mail!</p>
-        <form action=”mailto:contatoProvisorio@email.com” method="post" name="emailForm">
-            <label for="name">Nome: </label>
-            <input type="text" id="name" name="nomeCliente" required>
-            
-            <br>
-
-            <label for="email">e-mail: </label>
-            <input type="email" id="email" name="email" required>
-
-            <br>
-
-            <div>
-                <label for="mensagem" class="fcf-label">Sua mensagem</label>
-                <div>
-                    <textarea id="mensagem" name="mensagem" rows="6" maxlength="3000" required></textarea>
-                </div>
-            </div>
-
-            <input type="checkbox" id="checkbox">
-            <label for="checkbox" id="checkbox_lb">Eu gostaria de receber notícias via e-mail</label>
-            <br><br>
-            <button type="submit" id="button">Mandar mensagem</button>
-            
-        </form>
     </div>
 
     <!-- mensagem para a professora -->

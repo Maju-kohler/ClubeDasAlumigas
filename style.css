@@ -84,6 +84,11 @@ nav img{
     display: flex;
 }
 
+#contato{
+    background-color: var(--details);
+    display: flex;
+}
+
 /* textos */
 marquee{
     font-family: var(--font-text);
@@ -124,6 +129,10 @@ p{
     font-size: 3rem;
 }
 
+#participarCursos ol{
+    font-size: large;
+}
+
 
 /* imagens */
 #logo{
@@ -144,4 +153,15 @@ p{
 
 #professoraRosi img{
     border-radius: 25px 0 0 25px;
+}
+
+#eventos img{
+    width: 15rem;
+    height: auto;
+
+}
+/* video */
+
+video{
+    text-align: center;
 }
