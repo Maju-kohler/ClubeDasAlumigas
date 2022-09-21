@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 :root{
     --background-color: #FBF5F3;
     --title-color: #7B0828;
@@ -10,7 +12,7 @@
 }
 
 /* estrutura do website */
-body {
+html,body {
     font-family: var(--font-title);
     font-weight: 300;
     color: var(--text-color);
@@ -61,6 +63,7 @@ nav img{
 
 #historia p{
     width: 40rem;
+    text-align: justify;
 }
 
 #historia aside{
@@ -87,6 +90,39 @@ nav img{
 #contato{
     background-color: var(--details);
     display: flex;
+}
+
+form{
+    max-width: 600px;
+    /* text-align: left; */
+
+}
+input, textarea {
+    border:0; 
+    outline:0;
+    padding: 1em;
+    
+    width: 80%;
+    margin-top: 1em;
+    border-radius: 0 25px 25px 0;
+    resize: none;
+
+    font-family: var(--font-text);
+}
+
+.checkbox input{
+    margin-left: -17em;
+}
+
+button{
+    border: none;
+    background: var(--subtitle-color);
+    padding: 1em;
+    border-radius: 50px;
+
+    font-family: var(--font-title);
+    color: var(--background-color);
+    font-weight: bold;
 }
 
 /* textos */

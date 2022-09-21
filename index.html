@@ -163,29 +163,23 @@
             </ul>
 
             <p> Ou deixe uma mensagem na nossa caixa de e-mail!</p>
-            <form action=”mailto:contatoProvisorio@email.com” method="post" name="emailForm">
-                <label for="name">Nome: </label>
-                <input type="text" id="name" name="nomeCliente" required>
-                
-                <br>
+            <form action=”mailto:contatoProvisorio@email.com” method="post" name="emailForm" class="cf">
+                <div class="half left cf">
+                    <input type="text" id="name" name="nomeCliente" required placeholder="Seu nome">
+                    
 
-                <label for="email">e-mail: </label>
-                <input type="email" id="email" name="email" required>
-
-                <br>
-
-                <div>
-                    <label for="mensagem" class="fcf-label">Sua mensagem</label>
-                    <div>
-                        <textarea id="mensagem" name="mensagem" rows="6" maxlength="3000" required></textarea>
+                    <input type="email" id="email" name="email" required placeholder="Seu e-mail mais bonito">
+                       
+                    <textarea id="mensagem" name="mensagem" rows="6" maxlength="3000" required placeholder="Querida Rosimeri..."></textarea>
+                    
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox" id="checkbox_lb">Eu gostaria de receber notícias via e-mail</label>
+                        
                     </div>
+                    
+                    <button type="submit" id="button">Mandar mensagem</button>
                 </div>
-
-                <input type="checkbox" id="checkbox">
-                <label for="checkbox" id="checkbox_lb">Eu gostaria de receber notícias via e-mail</label>
-                <br><br>
-                <button type="submit" id="button">Mandar mensagem</button>
-                
             </form>
         </div>
         <aside id="eventos">
