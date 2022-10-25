@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube das Alumigas - Javascript</title>
+</head>
+
+<script type="text/javascript">
+    function validaForm(frm){
+        //Verifica se o campo Nome foi preenchido e contém no mínimo 3 caracteres
+        if(frm.nome.value == "" || frm.nome.value == null || frm.nome.value.lenght < 3) {
+            alert("Por favor, indique seu nome");
+            frm.nome.focus();
+            
+            
+            return false;
+        }
+
+        //Verifica se o email foi preenchido corretamente
+        if(frm.email.value.indexOf("@") == -1 || frm.email.value.indexOf(".") == -1 || frm.email.value == "" || frm.email.value == null ){
+            alert("Por favor, indique um e-mail válido");
+            frm.email.focus();
+
+            return false;
+        }
+
+        //Verifica se o usuário selecionou um sexo válido
+        var sexoM = document.getElementById('masc');
+        var sexoF = document.getElementById('fem');
+        if(sexoM.checked == false && sexoF.checked == false){
+            alert("Você precisa selecionar um sexo válido");
+            
+            return false;
+        }
+
+        //Valida a profissão, que deve ser ou Programador, Designer ou Tester
+        if(frm.cargo.value == "" || frm.cargo.value == "todas") {
+            alert("De momento, precisamos de especialistas nas três áreas indicadas");
+            frm.cargo.focus();
+
+            return false;
+        }
+
+        //Se passou em todos os testes, envia uma mensagem dizendo que deu tudo certo
+        alert("Formulario enviado para o banco de dados, " + frm.nome.value);
+        return false;
+    }
+    
+    function calcularMensalidade(){
+        var meses = document.getElementById("meses").value;
+
+        return document.getElementById("resultado").innerHTML =
+        "Resultado: R$" + meses*150 + " ao total."
+    }
+</script>
+
+<body>
+    <div>
+        <form name="validacaoTeste" method="post" action="javascriptExercicio.html"
+            onsubmit="return validaForm(this);">
+
+            <p>Validação de formulário </p>
+            
+            <p>Nome: <input type="text" name="nome" id="nome" /> </p>
+
+            <p>Email: <input type="text" name="email" id="email" /> </p>
+
+            <p>Sexo: 
+                <label> <input type="radio" name="sexo" value="M" id="masc"/> Masculino </label>
+                <label> <input type="radio" name="sexo" value="F" id="fem"/> Feminino </label>
+            </p>
+
+            <p>Profissão
+                <select name="cargo">
+                    <option value="" > Selecione o cargo</option>
+                    <option value="programador">Programador</option>
+                    <option value="designer">Designer</option>
+                    <option value="tester">Tester</option>
+                    <option value="todas">Todas</option>
+                </select>
+            </p>
+            <label> <input type="submit" name="sbt" value="Enviar" /></label>
+
+        </form>
+    </div>
+
+    <br>
+
+    <div>
+        <p> Calcule o plano mensal no Atelier!</p>
+
+        <b>Coloque quantos meses deseja fazer o curso <input type="number" id="meses"</b>
+        <button type="submit" onclick="calcularMensalidade()"> Calcular! </button>
+        <p id="resultado"></p>
+    </div>
+</body>
+</html>

@@ -59,6 +59,7 @@ nav img{
     border-radius: 25px 25px 0 0;
 
     display: flex;
+    /* border: 1px solid black; */
 }
 
 #historia p{
@@ -102,6 +103,7 @@ input, textarea {
     outline:0;
     padding: 1em;
     
+    
     width: 80%;
     margin-top: 1em;
     border-radius: 0 25px 25px 0;
@@ -111,7 +113,7 @@ input, textarea {
 }
 
 .checkbox input{
-    margin-left: -17em;
+    width: auto;
 }
 
 button{
